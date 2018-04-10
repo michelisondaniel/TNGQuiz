@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.michelison.tngquiz.ResultsActivity">
+
+    <TextView
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#000"
+        android:padding="16dp"
+        android:textSize="24dp"
+        android:id="@+id/grade"
+        android:text="Congratulations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/outOf"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#000"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:text="You Scored 10 out of 10"
+        android:layout_below="@+id/grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:id="@+id/retryButton"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="18dp"
+        android:background="#282323"
+        android:textColor="#FFF"
+        android:layout_margin="4dp"
+        android:padding="8dp"
+        android:text="Retry Quiz"
+        android:layout_below="@id/outOf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+</RelativeLayout>

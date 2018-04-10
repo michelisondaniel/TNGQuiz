@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="net.michelison.tngquiz.QuizActivity">
+
+    <RelativeLayout
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Score:"
+            android:padding="16dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:text="0"
+            android:id="@+id/points"
+            android:layout_alignParentRight="true"
+            android:padding="16dp"
+            />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:id="@+id/imageView"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/tng1"
+        android:scaleType="fitCenter"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/questions"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:padding="8dp"
+        android:textColor="#000"
+        android:layout_marginBottom="16dp"
+        android:text= "The USS Enterprise is the Flagship of the Federation Starfleet."
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="True"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:id="@+id/trueButton"
+            android:background="#A90909"
+            android:textColor="#FFF" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="False"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:id="@+id/falseButton"
+            android:background="#CC3"
+            android:textColor="#000" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
