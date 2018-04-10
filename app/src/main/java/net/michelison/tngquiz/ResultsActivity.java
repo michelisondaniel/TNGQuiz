@@ -5,14 +5,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
+
+import pl.droidsonroids.gif.GifTextView;
 
 public class ResultsActivity extends Activity {
 
     TextView grade, finalScore;
     Button retryButton;
+    GifTextView animatedGifImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +26,9 @@ public class ResultsActivity extends Activity {
         grade = (TextView) findViewById(R.id.grade);
         finalScore = (TextView) findViewById(R.id.outOf);
         retryButton = (Button) findViewById(R.id.retryButton);
+        animatedGifImageView = (GifTextView) findViewById(R.id.animatedGifImageView);
+
+        animatedGifImageView.setBackgroundResource(R.drawable.dwnwith);
 
         Bundle bundle = getIntent().getExtras();
         int score = bundle.getInt("finalScore");

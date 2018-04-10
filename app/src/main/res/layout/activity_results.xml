@@ -47,4 +47,18 @@
         android:layout_height="wrap_content"
         />
 
+        <pl.droidsonroids.gif.GifTextView
+            android:background="@drawable/dwnwith"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:padding="8dp"
+            android:id="@+id/animatedGifImageView"
+            android:layout_below="@+id/retryButton"
+            android:layout_width="250dp"
+            android:layout_height="200dp"
+
+            />
+
+
+
 </RelativeLayout>

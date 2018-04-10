@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="124dp"
         android:background="#282323"
         android:fontFamily="sans-serif-smallcaps"
         android:padding="15dp"
@@ -25,5 +25,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/spockGifView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/dwnspockdog"
+        android:layout_width="224dp"
+        android:layout_height="172dp"
+        android:layout_below="@id/startButton"
 
-</android.support.constraint.ConstraintLayout>
+        />
+
+
+</RelativeLayout>
